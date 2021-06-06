@@ -1,4 +1,4 @@
-package com.yamanit.red.common.contgroller;
+package com.yamanit.red.common.controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
