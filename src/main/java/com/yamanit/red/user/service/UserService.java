@@ -10,6 +10,6 @@ public class UserService {
 	private final UserRepository userRepository;
 
 	public String addUser() {
-		return userRepository.addUser();
+		return userRepository.addNewUser();
 	}
 }

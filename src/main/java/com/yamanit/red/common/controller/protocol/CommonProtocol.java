@@ -40,5 +40,6 @@ public class CommonProtocol {
 	public static class ResponseHeaders {
 		public static final ResponseHeader SUCCESS = new ResponseHeader(0, "Success");
 		public static final ResponseHeader RESPONSE_INSTANCE_CREATE_FAIL = new ResponseHeader(1, "Creating response instance is failed.");
+		public static final ResponseHeader UNKNOWN_FAIL = new ResponseHeader(2, "The requested operation failed for an unknown reason.");
 	}
 }

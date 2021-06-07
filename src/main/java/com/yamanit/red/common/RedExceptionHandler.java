@@ -10,4 +10,9 @@ public class RedExceptionHandler {
 	public CommonProtocol.Response handleCommonException(RedApiException exception) {
 		return new CommonProtocol.Response().setHeader(exception.getResponseHeader());
 	}
+
+	@ExceptionHandler(Throwable.class)
+	public CommonProtocol.Response handleThrowable(Throwable throwable) {
+		return new CommonProtocol.Response().setHeader(CommonProtocol.ResponseHeaders.UNKNOWN_FAIL);
+	}
 }
