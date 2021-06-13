@@ -8,17 +8,17 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class UserService {
-	private final UserRepository userRepository;
+	private final UserRepository userInMemoryRepository;
 
 	public User addUser() {
-		return userRepository.addNewUser();
+		return userInMemoryRepository.addNewUser();
 	}
 
 	public User getUser(String uuid) {
-		return userRepository.getUser(uuid);
+		return userInMemoryRepository.getUser(uuid);
 	}
 
 	public User modifyUser(User user) {
-		return userRepository.save(user);
+		return userInMemoryRepository.save(user);
 	}
 }
